@@ -68,6 +68,7 @@ import type { NextAuthConfig } from "next-auth";
 
 export const config = {
   secret: "foo",
+  trustHost: true,
   theme: {
     logo: "https://next-auth.js.org/img/logo/logo-sm.png",
   },
