@@ -6,6 +6,7 @@ export async function GET(req: NextRequest) {
   const h: string[] = [];
   return Response.json({
     origin,
+    url: req.url,
     headers: [...headers().entries()].map(([key, value]) => `${key}: ${value}`),
     envs: Object.entries(process.env).map((key) => `${key}`),
   });
