@@ -1,7 +1,9 @@
+export const revalidate = 60;
+
 export default function Test() {
   return (
     <div>
-      <h1>Test</h1>
+      <h1>{`Test ${new Date().toLocaleString()}`}</h1>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet id,
         exercitationem officia eius voluptatem enim dolorum quia debitis? Magnam
