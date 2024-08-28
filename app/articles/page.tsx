@@ -2,7 +2,7 @@ export const revalidate = 60;
 
 export default function Test() {
   return (
-    <div>
+    <article>
       <h1>{`Test ${new Date().toLocaleString()}`}</h1>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet id,
@@ -11,6 +11,6 @@ export default function Test() {
         nostrum?
       </p>
       <p>This is content that can be crawled</p>
-    </div>
+    </article>
   );
 }
